@@ -43,3 +43,12 @@ Install dependencies with:
 
 ```bash
 pip install numpy scipy matplotlib
+
+**Expected Output:**
+
+The script will integrate the dimensionless PDE using a Sommerfeld outgoing-wave boundary condition and apply a strict plateau criterion. 
+
+Because this script runs the refined high-resolution grid ($\Delta\rho=0.07$), the terminal output will read:
+`Core Energy Invariant: 94.971...`
+
+*Note: In the official manuscript, this high-resolution run is averaged with the baseline run to produce the resolution-converged quoting of 95.06 ± 0.09.*
