@@ -32,6 +32,15 @@ The numerical invariant reported in Section 5 of the manuscript can be reproduce
 
 python lgs_plateau_oscillon_sweep.py --Amin 0.758824 --Amax 0.758824 --nA 1 --sigmin 9.058824 --sigmax 9.058824 --nsig 1 --dt 0.008 --dr 0.07 --tmax 3500 --plot_best
 
+**Expected Output:**
+
+The script will integrate the dimensionless PDE using a Sommerfeld outgoing-wave boundary condition and apply a strict plateau criterion. 
+
+Because this script runs the refined high-resolution grid ($\Delta\rho=0.07$), the terminal output will read:
+`Core Energy Invariant: 94.971...`
+
+*Note: In the official manuscript, this high-resolution run is averaged with the baseline run to produce the resolution-converged quoting of 95.06 ± 0.09.*
+
 ### Dependencies
 
 - Python 3.8+
@@ -43,12 +52,3 @@ Install dependencies with:
 
 ```bash
 pip install numpy scipy matplotlib
-
-**Expected Output:**
-
-The script will integrate the dimensionless PDE using a Sommerfeld outgoing-wave boundary condition and apply a strict plateau criterion. 
-
-Because this script runs the refined high-resolution grid ($\Delta\rho=0.07$), the terminal output will read:
-`Core Energy Invariant: 94.971...`
-
-*Note: In the official manuscript, this high-resolution run is averaged with the baseline run to produce the resolution-converged quoting of 95.06 ± 0.09.*
